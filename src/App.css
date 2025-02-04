@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row; 
+}
+
+.sidebar {
+  width: 200px; /* Largura da barra lateral */
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.content {
+  flex: 1; /* O conteúdo ocupa o restante do espaço */
+  padding: 20px;
+  overflow-y: auto; /* Adiciona rolagem se necessário */
+  display: flex;
+  flex-direction: column; /* Garante que o conteúdo seja empilhado verticalmente */
+}
+
+.links {
+  margin-bottom: 20px; /* Adiciona espaço entre os links e a tabela */
+}
+
+.table-container {
+  flex: 1; /* A tabela ocupará o restante do espaço */
+}
