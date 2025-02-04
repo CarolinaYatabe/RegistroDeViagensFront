@@ -1,18 +1,89 @@
+ .div-form {
+     display: grid;
+     place-items: center;
+     margin-top: 30px;
+ }
+
+ /* 
 .form-input {
-    display: block;        
-    margin-bottom: 10px;   
-    width: 100%;           
-    max-width: 400px;      
-    padding: 10px;         
-    font-size: 16px;      
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
     border: 1px solid black;
-    border-radius: 4px;  
-    box-sizing: border-box; 
+    border-radius: 12px;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
-button {
+label {
     display: block;
-    background-color: darkgray;
-}
+    margin-bottom: 5px;
+    font-size: 16px;
+} */
 
+ .form-input::placeholder {
+     color: darkgray;
+ }
+
+ .form-input {
+     max-width: 190px;
+     height: 44px;
+     background-color: #05060f0a;
+     border-radius: .5rem;
+     padding: 0 1rem;
+     border: 2px solid transparent;
+     font-size: 1rem;
+     transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+ }
+
+ label {
+     display: block;
+     margin-bottom: .3rem;
+     font-size: .9rem;
+     font-weight: bold;
+     color: #05060f99;
+     transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+ }
+
+ input:hover,
+ input:focus,
+ .input-group:hover input {
+     outline: none;
+     border-color: #05060f;
+ }
+
+ form:hover label,
+ input:focus {
+     color: #05060fc2;
+ }
+
+ .button-form {
+     display: block;
+     background-color: darkgray;
+     margin: 10px auto;
+     --bg: #000;
+     --hover-bg: lightblue;
+     --hover-text: #000;
+     color: #fff;
+     cursor: pointer;
+     border: 1px solid var(--bg);
+     border-radius: 4px;
+     padding: 0.8em 2em;
+     background: var(--bg);
+     transition: 0.2s;
+ }
+
+ .button-form:hover {
+     color: var(--hover-text);
+     transform: translate(-0.25rem, -0.25rem);
+     background: var(--hover-bg);
+     box-shadow: 0.25rem 0.25rem var(--bg);
+ }
+
+ .button-form:active {
+     transform: translate(0);
+     box-shadow: none;
+ }

@@ -5,23 +5,23 @@
 }
 
 .sidebar {
-  width: 200px; /* Largura da barra lateral */
+  width: 200px;
   background-color: #f4f4f4;
   padding: 20px;
 }
 
 .content {
-  flex: 1; /* O conteúdo ocupa o restante do espaço */
+  flex: 1; 
   padding: 20px;
-  overflow-y: auto; /* Adiciona rolagem se necessário */
+  overflow-y: auto; 
   display: flex;
-  flex-direction: column; /* Garante que o conteúdo seja empilhado verticalmente */
+  flex-direction: column; 
 }
 
 .links {
-  margin-bottom: 20px; /* Adiciona espaço entre os links e a tabela */
+  margin-bottom: 20px; 
 }
 
 .table-container {
-  flex: 1; /* A tabela ocupará o restante do espaço */
+  flex: 1; 
 }

@@ -22,7 +22,7 @@ const TripsTable = () => {
     const deleteTrip = async (id: number) => {
         try {
             await axios.delete(`https://localhost:7175/Trip/DeleteTrip?id=${id}`);
-            setTrips(trips.filter(trip => trip.id !== id)); // Remove localmente a viagem excluída
+            setTrips(trips.filter(trip => trip.id !== id)); 
         } catch (error) {
             console.error("Erro ao deletar viagem:", error);
         }
@@ -101,7 +101,7 @@ const TripsTable = () => {
                                     trip.description
                                 )}
                             </td>
-                            <td className="div-action">
+                            <td className="action">
                                 {editingTrip === trip.id ? (
                                     <button className="action-button save-btn" onClick={() => saveEdit(trip.id)}><img src="src/assets/saveIcon.png"/></button>
                                 ) : (
