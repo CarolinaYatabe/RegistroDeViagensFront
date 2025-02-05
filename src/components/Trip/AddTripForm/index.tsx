@@ -56,7 +56,6 @@ const AddTrip = () => {
           type="number"
           id="userId"
           name="userId"
-          placeholder="Enter your userId"
           title="UserId field"
           onChange={handleChange}
         />
@@ -66,7 +65,6 @@ const AddTrip = () => {
           type="text"
           id="destination"
           name="destination"
-          placeholder="Enter your destination"
           title="Destination field"
           onChange={handleChange}
         />
@@ -77,7 +75,6 @@ const AddTrip = () => {
           type="text"
           id="tripName"
           name="tripName"
-          placeholder="Enter a name for the trip"
           title="Trip name field"
           onChange={handleChange}
         />
